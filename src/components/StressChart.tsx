@@ -9,7 +9,7 @@ export default function StressChart({ data }: StressChartProps) {
   // Convert raw answers to stress scores (inverted and normalized to 100%)
   const chartData = data.map((value, index) => ({
     question: index + 1,
-    stress: value !== undefined ? ((3 - value) / 3) * 100 : null,
+    stress: value !== undefined ? (value / 3) * 100 : null,
     average: data.reduce((acc, curr) => curr !== undefined ? acc + ((3 - curr) / 3) * 100 : acc, 0) / data.filter(v => v !== undefined).length
   }));
 

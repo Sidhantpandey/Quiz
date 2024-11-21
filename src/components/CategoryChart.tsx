@@ -13,11 +13,11 @@ interface CategoryChartProps {
 
 export default function CategoryChart({ data }: CategoryChartProps) {
   const chartData = [
-    { category: 'Anxiety', value: data.anxiety, fullMark: 100 },
-    { category: 'Depression', value: data.depression, fullMark: 100 },
-    { category: 'Stress', value: data.stress, fullMark: 100 },
-    { category: 'Social', value: data.social, fullMark: 100 },
-    { category: 'Emotional', value: data.emotional, fullMark: 100 },
+    { category: 'Anxiety', value: 100-data.anxiety, fullMark: 100 },
+    { category: 'Depression', value: 100- data.depression, fullMark: 100 },
+    { category: 'Stress', value: 100-data.stress, fullMark: 100 },
+    { category: 'Social', value: 100-data.social, fullMark: 100 },
+    { category: 'Emotional', value: 100-data.emotional, fullMark: 100 },
   ];
 
   return (
