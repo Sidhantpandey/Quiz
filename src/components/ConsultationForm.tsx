@@ -18,9 +18,12 @@ const timeSlots = [
 ];
 
 const therapists = [
-  { id: '1', name: 'Dr. Sarah Johnson', specialty: 'Anxiety & Depression' },
-  { id: '2', name: 'Dr. Michael Chen', specialty: 'Trauma & PTSD' },
-  { id: '3', name: 'Dr. Emily Rodriguez', specialty: 'Stress Management' },
+  { id: '1', name: 'Dr. R.K. Pandey', specialty: 'Anxiety & Depression' },
+  { id: '2', name: 'Dr. Yashika Saraswat', specialty: 'Trauma & PTSD' },
+  { id: '3', name: 'Dr. Emily Pandey', specialty: 'PTSD' },
+  { id: '3', name: 'Dr. Rakesh Verma', specialty: 'Depression and Counsellor' },
+  { id: '3', name: 'Dr. Vimala Devi', specialty: 'Counsellor' },
+  { id: '3', name: 'Dr. Mukesh Tripathi', specialty: 'Depression' },
 ];
 
 export default function ConsultationForm() {
